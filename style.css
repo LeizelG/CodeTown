@@ -13,6 +13,12 @@ body {
 	font-weight: 400;
 	font-family: 'Lemonada', cursive;
 	color: #222;
+	overflow-y: scroll; /* Add the ability to scroll*/
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+	display: none;
 }
 /* Grid
 ********************************************************************* */  
@@ -238,13 +244,13 @@ header {
 	-webkit-align-self: center;
 	-ms-flex-item-align: center;
 	align-self: flex-start;
-	margin-top: 13%;
+	margin-top: 12%;
 	padding: 2rem;
 	max-width: 960px;
 	text-align: center;
 }
 .title h1 {
-	font-size: 9rem;
+	font-size: 10rem;
 	font-weight: inherit;
 	text-shadow: 2px 2px 8px #302f2f;
 	text-transform: uppercase;
